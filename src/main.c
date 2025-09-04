@@ -50,7 +50,7 @@ int main(int argc, char *argv[]) {
 		return 1;
 	}
 	
-	printf("- Conversion completed\n");
+	printf("- Conversion complete\n");
 	
 	printf("- Creating CHR file\n");
 	
