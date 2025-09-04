@@ -1,0 +1,21 @@
+build*/
+remove/
+src/progInfo.h
+
+# Executables
+*.exe
+*.app
+
+# Static Libraries
+*.lib
+*.a
+
+# Shared Libraries
+*.dll
+*.dylib
+*.so
+
+# DOSBox-X Config File
+dosbox-x.conf
+
+.DS_Store

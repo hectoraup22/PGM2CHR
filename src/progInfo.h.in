@@ -1,0 +1,23 @@
+#ifndef __PROGINFO__
+#define __PROGINFO__
+
+/* - Program - */
+#ifndef PROGRAM_PRE_RELEASE
+	#define PROGRAM_PRE_RELEASE 1
+#endif
+
+#define PROGRAM_NAME "@PROJECT_NAME@"
+#if PROGRAM_PRE_RELEASE
+	#define PROGRAM_VERSION "@PROJECT_VERSION@pre"
+#else
+	#define PROGRAM_VERSION "@PROJECT_VERSION@"
+#endif
+
+/* - Length - */
+#define LENGTH_FILENAME 255
+#define LENGTH_BUFFER 255
+
+/* - Default - */
+#define DEFAULT_OUTPUTFILE "tiles.chr"
+
+#endif

@@ -1,0 +1,60 @@
+name: Build
+on: [push, pull_request]
+jobs:
+  build:
+    name: Build ${{matrix.build-targets.name}}
+    runs-on: ${{matrix.build-targets.os}}
+    strategy:
+      matrix:
+        build-targets:
+          - {
+            name: "Linux (x64)",
+            os: "ubuntu-latest",
+            cFlags: "",
+            uploadName: "PGM2CHR-Linux64",
+            filename: "PGM2CHR"
+          }
+          - {
+            name: "Windows (x64)",
+            os: "windows-latest",
+            cFlags: "",
+            uploadName: "PGM2CHR-Win64",
+            filename: "PGM2CHR.exe"
+          }
+          - {
+            name: "macOS (x64)",
+            os: "macos-13",
+            cFlags: "",
+            uploadName: "PGM2CHR-Mac64",
+            filename: "PGM2CHR"
+          }
+          - {
+            name: "macOS (arm64e)",
+            os: "macos-latest",
+            cFlags: "",
+            uploadName: "PGM2CHR-MacARM",
+            filename: "PGM2CHR"
+          }
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: 'true'
+      
+      - name: Configure CMake
+        run: >
+          cmake -S . -B build
+          -DCMAKE_C_COMPILER=gcc
+          -DCMAKE_BUILD_TYPE=Release
+          -DCMAKE_C_FLAGS=${{matrix.build-targets.cFlags}}
+          -G "Unix Makefiles"
+      
+      - name: Build
+        run: cmake --build build
+      
+      - name: Test
+        run: build/${{matrix.build-targets.filename}} example.pgm
+      
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{matrix.build-targets.uploadName}}
+          path: build/${{matrix.build-targets.filename}}
