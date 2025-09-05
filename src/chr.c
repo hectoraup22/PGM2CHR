@@ -38,7 +38,7 @@ int chr_pgmToCHR(
 		return 1;
 	}
 	
-	if (!STARTSWITH((char *)buffer, PGM_SIGNATURE)) {
+	if (!(STARTSWITH((char *)buffer, PGM_SIGNATURE))) {
 		fprintf(stderr, "ERROR: File signature isn't \"" PGM_SIGNATURE "\"\n");
 		return 1;
 	}
