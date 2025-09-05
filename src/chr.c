@@ -63,13 +63,13 @@ int chr_pgmToCHR(
 			
 			if (
 				(size[0] != CHR_TILES / 4) ||
-				(size[1] != CHR_TILES / 2)
+				(size[1] != CHR_TILES / 4)
 			) {
 				fprintf(
 					stderr,
 					"ERROR: Input image size isn't %ux%u\n",
 					CHR_TILES / 4,
-					CHR_TILES / 2
+					CHR_TILES / 4
 				);
 				return 1;
 			}
