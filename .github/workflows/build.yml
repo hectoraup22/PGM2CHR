@@ -52,7 +52,9 @@ jobs:
         run: cmake --build build
       
       - name: Test
-        run: build/${{matrix.build-targets.filename}} example.pgm
+        run: |
+          build/${{matrix.build-targets.filename}} example1.pgm
+          build/${{matrix.build-targets.filename}} example2.pgm
       
       - uses: actions/upload-artifact@v4
         with:
