@@ -56,6 +56,10 @@ jobs:
           build/${{matrix.build-targets.filename}} example1.pgm
           build/${{matrix.build-targets.filename}} example2.pgm
       
+      - name: Strip (macOS)
+        if: contains(matrix.build-targets.os, 'macos')
+        run: strip build/${{matrix.build-targets.filename}}
+      
       - uses: actions/upload-artifact@v4
         with:
           name: ${{matrix.build-targets.uploadName}}
